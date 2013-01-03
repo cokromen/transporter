@@ -24,7 +24,9 @@ namespace FP
 
         private void _Login_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
+            formMasterAdmin admin = new formMasterAdmin();
+            admin.Show();
 
         }
     }

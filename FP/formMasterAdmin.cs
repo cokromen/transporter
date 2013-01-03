@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace FP
 {
-    public partial class formUtama : Form
+    public partial class formMasterAdmin : Form
     {
-        public formUtama()
+        public formMasterAdmin()
         {
             InitializeComponent();
+        }
+
+        private void _Logout_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            formLogin login = new formLogin();
+            login.Show();
         }
     }
 }

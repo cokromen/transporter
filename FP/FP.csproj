@@ -55,16 +55,19 @@
     <Compile Include="formLogin.Designer.cs">
       <DependentUpon>formLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="formUtama.cs">
+    <Compile Include="formMasterAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formUtama.Designer.cs">
-      <DependentUpon>formUtama.cs</DependentUpon>
+    <Compile Include="formMasterAdmin.Designer.cs">
+      <DependentUpon>formMasterAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="formLogin.resx">
       <DependentUpon>formLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formMasterAdmin.resx">
+      <DependentUpon>formMasterAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -24,6 +24,7 @@ namespace FP
             {
                 conn = new OracleConnection(connStr);
                 conn.Open();
+                Console.WriteLine("Connection Open");
                 return true;
             }
             catch (Exception ex)
@@ -37,6 +38,7 @@ namespace FP
         {
             conn.Close();
             conn.Dispose();
+            Console.WriteLine ("Connection to database Closed!");
         }
 
         public DataSet ExecuteDataSet(string sql)   //executeQuery

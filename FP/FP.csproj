@@ -32,12 +32,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="Oracle.DataAccess, Version=4.112.3.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\MainProgram.cs\MainProgram.cs\Oracle.DataAccess.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,6 +52,57 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Connection.cs" />
+    <Compile Include="DataMember.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataMember.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataMobil.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataMobil.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataUser.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataUser.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="formKasir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formKasir.Designer.cs">
+      <DependentUpon>formKasir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPengembalian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPengembalian.Designer.cs">
+      <DependentUpon>FormPengembalian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formUpdateMobil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formUpdateMobil.Designer.cs">
+      <DependentUpon>formUpdateMobil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formInsertCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formInsertCar.Designer.cs">
+      <DependentUpon>formInsertCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formInsertMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formInsertMember.Designer.cs">
+      <DependentUpon>formInsertMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formInsertUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formInsertUser.Designer.cs">
+      <DependentUpon>formInsertUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="formLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,13 +115,106 @@
     <Compile Include="formMasterAdmin.Designer.cs">
       <DependentUpon>formMasterAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="formMasterKasir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formMasterKasir.Designer.cs">
+      <DependentUpon>formMasterKasir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUpdateMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUpdateMember.Designer.cs">
+      <DependentUpon>FormUpdateMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUpdateUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUpdateUser.Designer.cs">
+      <DependentUpon>FormUpdateUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lihatMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lihatMember.Designer.cs">
+      <DependentUpon>lihatMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lihatMobil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lihatMobil.Designer.cs">
+      <DependentUpon>lihatMobil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LihatUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LihatUser.Designer.cs">
+      <DependentUpon>LihatUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD5Password.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecordTransaksi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecordTransaksi.Designer.cs">
+      <DependentUpon>RecordTransaksi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportTransaksi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportTransaksi.Designer.cs">
+      <DependentUpon>ReportTransaksi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reportTransaksi1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>reportTransaksi.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TransaksiPenyewaan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransaksiPenyewaan.Designer.cs">
+      <DependentUpon>TransaksiPenyewaan.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="formKasir.resx">
+      <DependentUpon>formKasir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPengembalian.resx">
+      <DependentUpon>FormPengembalian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formUpdateMobil.resx">
+      <DependentUpon>formUpdateMobil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formInsertCar.resx">
+      <DependentUpon>formInsertCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formInsertMember.resx">
+      <DependentUpon>formInsertMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formInsertUser.resx">
+      <DependentUpon>formInsertUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formLogin.resx">
       <DependentUpon>formLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formMasterAdmin.resx">
       <DependentUpon>formMasterAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUpdateMember.resx">
+      <DependentUpon>FormUpdateMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUpdateUser.resx">
+      <DependentUpon>FormUpdateUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lihatMember.resx">
+      <DependentUpon>lihatMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lihatMobil.resx">
+      <DependentUpon>lihatMobil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LihatUser.resx">
+      <DependentUpon>LihatUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -78,6 +225,49 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RecordTransaksi.resx">
+      <DependentUpon>RecordTransaksi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="ReportTransaksi.resx">
+      <DependentUpon>ReportTransaksi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransaksiPenyewaan.resx">
+      <DependentUpon>TransaksiPenyewaan.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataMember.xsc">
+      <DependentUpon>DataMember.xsd</DependentUpon>
+    </None>
+    <None Include="DataMember.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataMember.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataMember.xss">
+      <DependentUpon>DataMember.xsd</DependentUpon>
+    </None>
+    <None Include="DataMobil.xsc">
+      <DependentUpon>DataMobil.xsd</DependentUpon>
+    </None>
+    <None Include="DataMobil.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataMobil.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataMobil.xss">
+      <DependentUpon>DataMobil.xsd</DependentUpon>
+    </None>
+    <None Include="DataUser.xsc">
+      <DependentUpon>DataUser.xsd</DependentUpon>
+    </None>
+    <None Include="DataUser.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataUser.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataUser.xss">
+      <DependentUpon>DataUser.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -87,6 +277,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="reportTransaksi.xsc">
+      <DependentUpon>reportTransaksi.xsd</DependentUpon>
+    </None>
+    <None Include="reportTransaksi.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>reportTransaksi1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="reportTransaksi.xss">
+      <DependentUpon>reportTransaksi.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

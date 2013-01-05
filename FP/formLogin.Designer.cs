@@ -37,8 +37,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this._Cancel = new System.Windows.Forms.Button();
             this._Login = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -123,7 +121,7 @@
             this._Cancel.Font = new System.Drawing.Font("Segoe UI Light", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._Cancel.ForeColor = System.Drawing.Color.White;
             this._Cancel.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this._Cancel.Location = new System.Drawing.Point(466, 280);
+            this._Cancel.Location = new System.Drawing.Point(453, 233);
             this._Cancel.Name = "_Cancel";
             this._Cancel.Size = new System.Drawing.Size(78, 36);
             this._Cancel.TabIndex = 38;
@@ -140,7 +138,7 @@
             this._Login.Font = new System.Drawing.Font("Segoe UI Light", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._Login.ForeColor = System.Drawing.Color.White;
             this._Login.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this._Login.Location = new System.Drawing.Point(551, 280);
+            this._Login.Location = new System.Drawing.Point(548, 233);
             this._Login.Name = "_Login";
             this._Login.Size = new System.Drawing.Size(78, 36);
             this._Login.TabIndex = 37;
@@ -148,36 +146,12 @@
             this._Login.UseVisualStyleBackColor = false;
             this._Login.Click += new System.EventHandler(this._Login_Click);
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Admin",
-            "Kasir"});
-            this.comboBox1.Location = new System.Drawing.Point(270, 217);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(356, 23);
-            this.comboBox1.TabIndex = 39;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(174, 217);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(72, 17);
-            this.label6.TabIndex = 40;
-            this.label6.Text = "Log As     :";
-            // 
             // formLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.ClientSize = new System.Drawing.Size(817, 346);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this._Cancel);
             this.Controls.Add(this._Login);
             this.Controls.Add(this.label5);
@@ -208,8 +182,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button _Cancel;
         private System.Windows.Forms.Button _Login;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label6;
     }
 }
 
